@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Coverage directory
+coverage
+
+# Dependency directory
+node_modules
+
+# Release
+dist/
+
+# Other
+*.DS_Store
+.idea/
+docs/

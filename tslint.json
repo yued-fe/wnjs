@@ -1,0 +1,8 @@
+{
+  "extends": ["tslint:latest", "tslint-eslint-rules", "tslint-config-prettier"],
+  "rules": {
+    "interface-name": false,
+    "prefer-for-of": false,
+    "ordered-imports": false
+  }
+}
