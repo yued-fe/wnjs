@@ -18,15 +18,15 @@ export default function compareVersion(version1: string, version2: string) {
     if (
       (version1Array[index] &&
         !version2Array[index] &&
-        parseInt(version1Array[index]) > 0) ||
-      parseInt(version1Array[index]) > parseInt(version2Array[index])
+        parseInt(version1Array[index], 10) > 0) ||
+      parseInt(version1Array[index], 10) > parseInt(version2Array[index], 10)
     ) {
       return 1;
     } else if (
       (version2Array[index] &&
         !version1Array[index] &&
-        parseInt(version2Array[index]) > 0) ||
-      parseInt(version1Array[index]) < parseInt(version2Array[index])
+        parseInt(version2Array[index], 10) > 0) ||
+      parseInt(version1Array[index], 10) < parseInt(version2Array[index], 10)
     ) {
       return -1;
     }
