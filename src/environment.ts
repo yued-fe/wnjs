@@ -6,4 +6,4 @@ export const isInNode =
   process.versions != null &&
   process.versions.node != null;
 
-export const isInWorker = typeof importScripts !== "undefined";
+export const isInWebWorker = typeof importScripts !== "undefined";
